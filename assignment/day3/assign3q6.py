@@ -1,0 +1,32 @@
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error! Division by zero"
+    return a / b
+
+def calculate(operand1, operand2, operation):
+    return operation(operand1, operand2)
+
+
+# Testing the calculate function
+print("---- Testing calculate() Function ----")
+
+print("Addition :", calculate(10, 5, add))
+print("Subtraction :", calculate(10, 5, subtract))
+print("Multiplication :", calculate(10, 5, multiply))
+print("Division :", calculate(10, 5, divide))
+
+print("\n---- Another Set of Inputs ----")
+print("Addition :", calculate(25, 15, add))
+print("Subtraction :", calculate(25, 15, subtract))
+print("Multiplication :", calculate(25, 15, multiply))
+print("Division :", calculate(25, 5, divide))
